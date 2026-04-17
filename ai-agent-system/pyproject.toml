@@ -1,0 +1,10 @@
+[project]
+name = "ai-agent-system"
+version = "0.1.0"
+description = "State-aware AI Agent MVP"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pyright]
+extraPaths = ["."]

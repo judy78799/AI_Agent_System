@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is LangGraph used for?",
+    "expected_keywords": ["stateful", "workflow", "agent"]
+  },
+  {
+    "question": "Explain a framework for multi-step LLM applications.",
+    "expected_keywords": ["state", "llm", "workflow"]
+  }
+]
