@@ -35,4 +35,4 @@ qdrant_storage/
 # Build
 dist/
 build/
-*.egg-info/
+*.egg-info/.vscode/
