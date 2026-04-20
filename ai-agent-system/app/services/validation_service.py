@@ -1,5 +1,3 @@
-from pydantic import BaseModel
-
 from app.agent.state import RunState
 from app.schemas.validation import ValidationResult
 

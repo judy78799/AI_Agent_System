@@ -1,0 +1,13 @@
+[project]
+# 패키지 메타데이터 name(현재 github 기준 repository명과 동일하게)
+name = "ai-agent-system"
+version = "0.1.0"
+description = "State-aware AI Agent MVP"
+
+# 현재 디렉토리에서 패키지 찾아서 설치하도록 설정
+[tool.setuptools.packages.find]
+where = ["."]
+
+# import 경로 인식용
+[tool.pyright]
+extraPaths = ["."]
