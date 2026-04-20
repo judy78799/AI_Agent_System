@@ -1,7 +1,11 @@
+/*코드 구조를 IDE가 이해하도록 pyright 설정 파일 추가
+- root: 프로젝트 루트에서 pyright가 패키지 인식하도록 설정(ModuleNotFoundError 방지)
+- extraPaths: import 경로 문제 해결
+*/
 {
   "executionEnvironments": [
     {
-      "root": "ai-agent-system",
+      "root": ".",
       "extraPaths": ["."]
     }
   ]
