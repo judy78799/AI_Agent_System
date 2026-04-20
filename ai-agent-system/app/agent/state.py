@@ -28,3 +28,10 @@ class AgentContext(BaseModel):
 
     trace_id: str | None = None
     metadata: dict[str, Any] = Field(default_factory=dict)
+
+
+# TODO: 나중에 app/schemas/plan.py로 분리
+class PlanResult(BaseModel):
+    strategy: str
+    tool_required: bool = False
+    retrieval_required: bool = True
