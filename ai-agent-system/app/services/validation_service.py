@@ -1,16 +1,11 @@
 from pydantic import BaseModel
 
 from app.agent.state import RunState
-
-
-class ValidationResult(BaseModel):
-    state: RunState
-    confidence: float
-    reason: str
-    issues: list[str] = []
+from app.schemas.validation import ValidationResult
 
 
 class ValidationService:
+    """검증 로직만 담당"""
     def validate(self, answer: str | None, docs: list[str]) -> ValidationResult:
         if not docs:
             return ValidationResult(
