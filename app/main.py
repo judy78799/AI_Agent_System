@@ -35,7 +35,10 @@ def create_app() -> FastAPI:
     @app.get("/health")
     async def health_check() -> dict[str, str]:  # type: ignore[reportUnusedFunction]
         return {"status": "healthy"}
-        
+
+    @app.get("/hello")
+    def hello(): # type: ignore[reportUnusedFunction]
+        return {"message": "Hello, World!"}    
     # 3. 모든 설정이 끝난 후 마지막에 반환
     return app
 
