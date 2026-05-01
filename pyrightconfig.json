@@ -12,6 +12,7 @@
   "reportUnknownArgumentType": true,
   "reportUnknownLambdaType": true,
   "reportGeneralTypeIssues": true,
+  "reportUnusedFunction": "none", 
 
   "executionEnvironments": [
     {
