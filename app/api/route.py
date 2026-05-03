@@ -12,10 +12,10 @@ def ask(query: str) -> AgentResponse:
     result = run_agent(query)
 
     return AgentResponse(
-    answer=getattr(result, "answer", None),
-    state=getattr(result, "state", RunState.FAIL),
-    confidence=getattr(result, "confidence", 0.0),
-    reason=getattr(result, "reason", ""),
-    retries=getattr(result, "retry_count", 0),
-    trace_id=getattr(result, "trace_id", None),
+        answer=result.answer,
+        state=result.state or RunState.FAIL,
+        confidence=result.confidence or 0.0,
+        reason=result.reason or "",
+        retries=result.retry_count,
+        trace_id=result.trace_id,
     )
